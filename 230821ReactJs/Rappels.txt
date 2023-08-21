@@ -1,0 +1,80 @@
+
+>> Opérateurs logiques >>  
+= 
+!=
+<
+>
+<=
+>=
+
+OU ||
+ET &&
+
+>> Conditions >>  
+IF ... ELSE 
+
+Ternaire => condition true/false
+
+switch(){
+    case;
+}
+
+
+>> BOUCLES >> 
+while 
+
+for 
+
+for in
+for of 
+
+.foreach
+.map
+.filter
+
+>> fonctions >>
+function toto(){}
+
+const toto = () => {}
+
+>> types >>
+
+number 
+array 
+string 
+boolean
+function 
+object
+
+>> TABLEAU >>
+let array = []
+
+>> OBJET >>
+let objet = {
+    clé : "valeur"
+}
+
+
+>> Ajouter headingsmap >>
+
+
+>> react js >>
+
+ 
+facile d'utilisation
+performant
+très maintenable 
+
+npm install -g npm
+
+npx create-react-app "nomDuProjet"
+
+  cd mon_first_projet
+npm start
+
+
+def >> node module = ensemble des dépendances dans react 
+
+exemple chartjs qui permet de faire des chartes, 
+trijs qui permet de faire de la 3d
+
