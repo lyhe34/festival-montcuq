@@ -25,9 +25,9 @@ export default function Panier() {
     const handleDelete = (index) => {
         const updateFruits = [...fruits];
         updateFruits.splice(index, 1);
-        setFruits[updateFruits]
+        setFruits(updateFruits)
     }
-    
+
     return (
         <>
             <h1>Dans mon panier</h1>
