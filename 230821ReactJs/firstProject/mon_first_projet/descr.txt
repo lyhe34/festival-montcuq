@@ -1,3 +1,9 @@
+node -v 
+npm -v
+$ npx create-react-app mon_first_projet
+$   npm start
+
+
 
 public = va être vu par tous les utilisateurs
 

@@ -8,6 +8,7 @@ import Counter from './Counter';
 import Chrono from './Chrono';
 import Hour from './Hour'
 import Counter2 from './Counter2'
+import Panier from './MonPanier'
 
 import SayHello from './SayHello'
 
@@ -51,6 +52,10 @@ function App() {
         <Counter2/>
 
         <SayHello/>
+
+
+
+        <Panier/>
         <a
           className="App-link"
           href="https://reactjs.org"
