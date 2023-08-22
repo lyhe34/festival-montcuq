@@ -66,6 +66,7 @@ et un champ pour ajouter les éléments dans le panier
 230822
 
 J2>>
+ 1>>
   // Objectif : 
 
     // Mettre en place un composant NavBar qui va regrouper 
@@ -78,6 +79,7 @@ J2>>
     // Utilisation ds props et des hooks. 
 
 
+2>>
 CREER>>
 Un hook personnalisé. 
 Local storage se charge du processus d'enregistrement ; on va lui envoyer des données,
@@ -94,3 +96,8 @@ Il est essentiel de comprendre, cependant, que l'utilisation du localStorage com
 
 Les développeurs utilisent fréquemment le localStorage pour ajouter une fonctionnalité en mode sombre à une application, enregistrer un élément de tâche ou conserver des valeurs d'entrée de formulaire d'un utilisateur, et cela parmi de nombreux autres scénarios.
 )
+
+3>> 
+Créer un fichier login 
+
+
