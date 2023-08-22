@@ -84,6 +84,8 @@ Local storage se charge du processus d'enregistrement ; on va lui envoyer des do
 et il va se charger 
 un hook va enregistrer dans le localStorage > va attendre des paramètres. 
 
+cf>>
+https://www.freecodecamp.org/french/news/comment-utiliser-le-localstorage-avec-les-hooks-de-react-pour-enregister-et-afficher-des-elements/
 
 (
   Autrement dit, le localStorage permet aux développeurs de stocker et de récupérer des données dans le navigateur.
