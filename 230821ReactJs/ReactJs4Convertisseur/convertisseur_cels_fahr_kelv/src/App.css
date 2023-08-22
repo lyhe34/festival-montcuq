@@ -14,7 +14,6 @@
 }
 
 .App-header {
-  /* background-color: linear-gradient(); */
   background: linear-gradient(#e66465, #9198e5);
   min-height: 100vh;
   display: flex;
@@ -36,4 +35,29 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+.nav {
+  background-color: cadetblue;
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+  list-style-type: none;
+  margin: 0;
+  /* padding-left: 0; */
+}
+.navlist a{
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+  padding: 1em;
+}
+.navlist :hover {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  /* padding-left: 1em;
+  padding-right: 1em; */
+  background-color: brown;
 }
