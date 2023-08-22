@@ -1,4 +1,6 @@
 // CLASSES>> 
+/* ENglobe tout
+
 import React, { Component } from 'react';
 
 class Chrono extends Component {
@@ -131,3 +133,6 @@ function Chronometre () {
     }
 
 }
+
+
+*/

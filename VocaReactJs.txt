@@ -1,0 +1,10 @@
+useState
+useEffect
+
+render() 
+
+Un autre hook : useRef ; permet de récup une info sans pour autant modifier cet élément, != useState
+useRef permet de ne pas modifier le DOM, et de ne pas le recharger, alors que useState nécessite à chaque activation 
+de mettre à jour et recharger le DOM. 
+
+Création et personnalisation de 'hook' possible. cf. useLog et ref 

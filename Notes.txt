@@ -1,0 +1,66 @@
+230725
+Marceau — Aujourd’hui à 14:37
+@CDA34 23-01 Bonjour/re bonjour 🙂 
+
+📌 Voici quelques pistes/questions pour préparer vos oraux et vos révisions pour la partie conception
+
+🔹 Cas d'utilisation : pourquoi, à quoi ca sert ? 
+Savoir définir : Acteur, cas d'utilisation, héritage, include, extend
+
+🔹 Diagramme d'activité : pourquoi ?
+Savoir expliquer : État initial, accept signal, décision, send signal, flow final, final point
+
+🔹 Diagramme séquence : pourquoi ? 
+Présenter un scénario nominal
+Expliquer un scénario d'erreur, un scénario alternatif 
+Quelles sont les différences ? (traduction du diagramme d'activité)
+
+🔹 Maquettes : pourquoi ? 
+Présenter une maquette de zoning
+Présenter un mock-up
+Présenter une maquette de protoype 
+Suggérer une maquette mobile (mock-up uniquement)
+
+
+
+
+
+
+
+
+1>>
+<! Encart avec lien sur la page et la position de l'encart sur la page . >
+
+<a class="sideActions__item  js-courseElementActions-copyUrl  js-tooltip" href="https://openclassrooms.com/fr/courses/7342806-creez-une-maquette-web-avec-figma/7458079-prenez-en-main-figma#/id/r-7484865" data-tooltip="Copier le lien" data-tooltip-done="Lien copié !" data-clipboard-text="https://openclassrooms.com/fr/courses/7342806-creez-une-maquette-web-avec-figma/7458079-prenez-en-main-figma#/id/r-7484865">
+#
+</a>
+1<<
+
+
+FIGMA>> 
+
+2>> outils web design : 
+Maquettes : 
+Sketch
+AdobeXS
+Collaboration : 
+Zeplin 
+Invision 
+2<<
+
+3>> Cf. Dribble si tu es en panne d'inspiration 
+Mais Dribbble n'est pas la seule manière de chercher l'inspiration. 
+Il existe d'autres plateformes de partage de design telles que Behance, 
+ou bien Awwwards qui décerne des prix 
+pour les plus beaux sites Internet (avec différentes catégories). 
+Vous pouvez aussi tout simplement aller voir les sites que vous aimez, 
+chercher sur Google, vous abonner à des newsletters dédiées au design. 
+Pour ma part, j'ai également ajouté l'extension Muzli 
+qui me permet d'afficher les tendances design à chaque fois que j'ouvre un nouvel onglet. 
+3<<
+
+FIGMA<<
+
+4>> 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
+4<<
+

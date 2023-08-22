@@ -1,0 +1,80 @@
+230822
+
+J1>>
+
+node -v 
+npm -v
+$ npx create-react-app mon_first_projet
+$   npm start
+
+
+
+public = va être vu par tous les utilisateurs
+
+package.json = toutes les dépendances y sont stockées
+
+1>>
+Conseil : créer in src un dossier component et mettre les composants dedans.
+Conseil : créer in src un dossier styles et mettre les css dedans.
+
+!! when ../, ne pas mettre par exemple ../src/etc.; on est déjà dans src.
+ 
+
+ !! ES7++ = snippets
+
+2>>
+créer un composantt hello et un composant bye.
+les soumettre à un booléen. 
+ > app.js 
+
+
+3>> exo/ <img> en faire un composant 
+
+!!! les noms de composants c'est avec une maj petite pute. 
+
+
+4>> 
+props = propriété ; on peut faire passer des propriétés à un composant. 
+
+
+
+5>> créer composant counter
+
+6>> Créer un chrono avec les state
+NB utiliser setInterval avec les intervales de temps. 
+Un bouton démarrer
+Pause 
+Reset
+
+setState
+setInterval
+useEffect
+
+
+
+7
+8
+
+9>> Créer un panier de fruits. 
+On veut que ce composant affiche la liste des fruits préz dans le tableau
+et un champ pour ajouter les éléments dans le panier
+
+
+230822
+
+J2>>
+  // Objectif : 
+
+    // Mettre en place un composant NavBar qui va regrouper 
+    // l'ensembler des composants déjà faits sous forme de liens,
+    // pas besoin de garder les liens, nous le ferons plus tard.
+
+    // Créer le composant 'Shop' qui stockera l'objet 'produits' et qui sera parent du composant 
+    // 'Card' qui, lui, afficher sous forme de carte chaque produit.Créer
+
+    // Utilisation ds props et des hooks. 
+
+
+render() 
+
+Un autre hook : useRef ; permet de récup une info sans pour autant modifier cet élément, != useState
