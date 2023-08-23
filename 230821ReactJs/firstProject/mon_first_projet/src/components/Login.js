@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 
 
+// 1>>> Realize a Form 
+// w/ ev/thing necessary : champ email/pseudo, 2Champ Mot de passe, 3Button.  
+
+// 2 To capture the values of the inputs use useState hook from React: 
 export const Login = () => {
     // const [email, setEmail] = useState
     return (
