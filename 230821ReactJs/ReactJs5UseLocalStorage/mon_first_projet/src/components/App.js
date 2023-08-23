@@ -4,7 +4,7 @@
 import logo from '../assets/logo.svg';
 import '../styles/App.css';
 
-// STYLES<<
+// <<STYLES<<
 // -------------------
 
 // >>COMPONENTS>>
@@ -26,15 +26,8 @@ import SayHello from './SayHello';
 
 import Shop from './ShopCorrection';
 
+
 import Convertisseur from './Convertisseur';
-
-//  import Ref from './ref';
-
-import {Login} from './Login';
-import Register from './Register';
-
-
-// COMPONENTS<<
 
 function App() {
   const isVisible = false;
@@ -43,11 +36,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         
-
-      <Login/>
-
-
-
+        <h2>Convertisseur</h2>
         <Convertisseur />
 
         <Img />

@@ -102,29 +102,4 @@ Créer un fichier login
 
 
 A Suivre >>
-Puis ajouter des Liens
-Un login 
-
-
-J3>> 
-230823
-1>> 
-Ajouter une fonction login 
-
-2>> 
-Exo Calcule besoin calorique :
-Créer une application permettant de calculer les besoins calorique d’un individu en fonction de son genre, son poids, sa taille, son âge et son activité physique. Il faut créer pour ça un formulaire pour saisir toutes les données et les stocker dans un hook d'état. 
-Ci-après la liste des activités avec les coef et les deux calcules pour les femmes et les hommes
-Liste des activités :
-•    Journée passée au repos allongé, coef 1
-•    Travail sédentaire assis, pas de sport, coef 1.2
-•    Travail sédentaire avec 30 min de marche, coef 1.4
-•    Travail sédentaire et 1h de sport, coef 1.6
-•    Travail sédentaire et 1h30 à 2h de sport, coef 1.7
-•    Travail physique avec beaucoup de déplacement et 1h30 de sport, coef 1.9
-•    Travail physique et 3h à 4h de sport, coef 2
-Calcul : 
-•    Homme: (66.5+(13.75Poids)+(5Taille)-(6.77Age)) coef
-•    Femme: (655.1 + (9.56Poids)+(1.85Taille)-(4.67Age)) coef
-
-
+Puis Liens 
