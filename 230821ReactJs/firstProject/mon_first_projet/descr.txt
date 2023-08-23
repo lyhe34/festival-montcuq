@@ -128,3 +128,10 @@ Calcul :
 •    Femme: (655.1 + (9.56Poids)+(1.85Taille)-(4.67Age)) coef
 
 
+
+3>> 
+Exercice Liste de Tâche: 
+Créer une liste de tâches qui devra avoir comme fonctionnalité d'ajouter, de supprimer et de modifier. 
+Utilisez les props pour faire passer des fonctions entre les composants et les states pour gérer votre tableau de tâche.
+
+
