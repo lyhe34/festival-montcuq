@@ -1,5 +1,7 @@
 import '../styles/App.css';
-import Logo from './Logo';
+import logo from '../assets/logo.svg';
+
+
 import Message from './Message';
 import Counter from './Counter';
 import Chronometre from './Chronometre';
@@ -10,10 +12,11 @@ import Shop from './Shop';
 import Ref from './Ref';
 import useLog from './useLog';
 import Login from './Login';
+
 import useLocalStorage from './useLocalStorage';
 
 function App() {
-  
+
   const monTexte = "Je fais du ReactJS"
 
   useLog("Mon message")
@@ -25,7 +28,7 @@ function App() {
   const handleSubmit = e => {
     const login = e.target.login.value
     const password = e.target.password.value
-    if(login === 'id' && password === 'mdp'){
+    if (login === 'id' && password === 'mdp') {
       setId(login)
       setPass(password)
       setIsLogged(true)
@@ -37,23 +40,23 @@ function App() {
     <div className="App">
       <header className="App-header">
 
-        { !isLogged ? (
+        {!isLogged ? (
           <Login onSubmit={handleSubmit} />
         ) : (
           <>
             <Logo />
-            <SayHello /> 
-            <Message text={monTexte}/>
+            <SayHello />
+            <Message text={monTexte} />
             <Counter />
             <Chronometre />
             <Hour />
-            <Panier /> 
+            <Panier />
             <Shop />
             <Ref />
           </>
-        
+
         )}
-        
+
       </header>
     </div>
   );
