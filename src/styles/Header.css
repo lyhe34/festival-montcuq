@@ -1,0 +1,14 @@
+header
+{
+    background-color: blueviolet;
+}
+
+.user-icon
+{
+    color: white;
+}
+
+.navbar-nav > *
+{
+    margin: 0 10px;
+}
