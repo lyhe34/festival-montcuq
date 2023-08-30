@@ -23,7 +23,7 @@ Conseil : créer in src un dossier styles et mettre les css dedans.
  !! ES7++ = snippets
 
 2>>
-créer un composantt hello et un composant bye.
+créer un composant hello et un composant bye.
 les soumettre à un booléen. 
  > app.js 
 

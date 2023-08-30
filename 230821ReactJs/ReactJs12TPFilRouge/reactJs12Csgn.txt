@@ -1,0 +1,31 @@
+Projet de mise en place des besoins fil rouge: 
+
+Réaliser une application ReactJS permettant d'afficher un carte interactive, un système de réservation et des données sur un sujet comme par exemple: 
+Vélo en libre service : https://citybik.es/
+Restaurant:  https://platform.otqa.com/
+Information sur la ville avec Wikipédia : https://www.mediawiki.org/wiki/API:Main_page#API_documentation
+etc...
+Pour la carte interactive vous pouvez utiliser la libraire react-leaflet qui permet de mieux gérer dans ReactJS l'api onstreetmap: https://react-leaflet.js.org/
+L'application comportera également des informations météo sur la localisation que l'on aura sélectionné, avec l'api openweathermap : https://openweathermap.org/
+
+Ajouter une fonctionnalité qui permet d'activer la localisation automatique sur le navigateur, cela permettra de centrer la carte sur votre position et de donner déjà des informations. 
+
+Le système de réservation dépendra du type de données que vous aurez choisi, même si le type de réservation n'a pas de sens l'important est de mettre en place un calendrier avec des réservations. 
+
+Ajouter enfin la gestion de plusieurs utilisateurs avec formulaire de connexion, page préférence utilisateur (thème, alias, image etc...). Vous pouvez utiliser l'api https://fakestoreapi.com/docs qui dispose de données utilisateurs.
+Comme on ne peut pas enregistrer les données sur un serveur, il va falloir ruser avec le localStorage.
+
+Le projet devra être fait en groupe, il faudra mettre en place un gestion de projet Agile avec des points réguliers sur l'avancement de l'application, et travailler avec GitHub (gestion des branches). Prenez le temps de réfléchir au début à tous ce que vous aurez besoin dans le projet, de le designer avec figma par exemple, et de diviser les tâches pour ne pas dépasser la deadline. 
+
+Have fun !
+React Leaflet | React Leaflet
+React components for Leaflet maps
+Сurrent weather and forecast
+Get current weather, hourly forecast, daily forecast for 16 days, and 3-hourly forecast 5 days for your city. Historical weather data for 40 years back for any coordinate. Helpful stats, graphics, and this day in history charts are available for your reference. Interactive maps show precipitation, clouds, pressure, wind around your location.
+API:Main page
+This page provides an overview of the MediaWiki Action API, represented by the api.php endpoint.
+This page is intended for technical contributors and software developers who wish to understand and use the MediaWiki Action API.
+Nicolas — Aujourd’hui à 10:08
+https://education.github.com/git-cheat-sheet-education.pdf
+Nicolas — Aujourd’hui à 12:14
+https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}

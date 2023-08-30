@@ -1,0 +1,11 @@
+Exercice Route: 
+
+Créer un blog qui contient des articles. 
+Chaque article à un nom, une description, un tag, un auteur... 
+Créer un système de filtre sur le tag et plus si vous le souhaitez. 
+Les articles sont affichés sous forme de grille avec seulement le titre et l'auteur, quand on clic dessus il faut rediriger l'utilisateur vers la page de l'article complet. 
+Ajouter un bouton de retour en arrière.
+Permettre d'ajouter un article
+
+
+

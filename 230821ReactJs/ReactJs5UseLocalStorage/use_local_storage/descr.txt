@@ -67,18 +67,8 @@ et un champ pour ajouter les éléments dans le panier
 
 J2>>
  1>>
-  // Objectif : 
-
-    // Mettre en place un composant NavBar qui va regrouper 
-    // l'ensembler des composants déjà faits sous forme de liens,
-    // pas besoin de garder les liens, nous le ferons plus tard.
-
-    // Créer le composant 'Shop' qui stockera l'objet 'produits' et qui sera parent du composant 
-    // 'Card' qui, lui, afficher sous forme de carte chaque produit.Créer
-
-    // Utilisation ds props et des hooks. 
-
-
+ 
+ 
 2>>
 CREER>>
 Un hook personnalisé. 
@@ -92,9 +82,14 @@ https://www.freecodecamp.org/french/news/comment-utiliser-le-localstorage-avec-l
 (
   Autrement dit, le localStorage permet aux développeurs de stocker et de récupérer des données dans le navigateur.
 
-Il est essentiel de comprendre, cependant, que l'utilisation du localStorage comme base de données pour votre projet n'est pas une bonne pratique, car les données seront perdues lorsque l'utilisateur videra le cache, entre autres choses.
+Il est essentiel de comprendre, cependant, que l'utilisation du localStorage
+ comme base de données pour votre projet n'est pas une bonne pratique, 
+ car les données seront perdues lorsque l'utilisateur videra le cache, entre autres choses.
 
-Les développeurs utilisent fréquemment le localStorage pour ajouter une fonctionnalité en mode sombre à une application, enregistrer un élément de tâche ou conserver des valeurs d'entrée de formulaire d'un utilisateur, et cela parmi de nombreux autres scénarios.
+Les développeurs utilisent fréquemment le localStorage pour ajouter 
+une fonctionnalité en mode sombre à une application, enregistrer un élément de tâche 
+ou conserver des valeurs d'entrée de formulaire d'un utilisateur, et cela parmi de nombreux autres scénarios.
+
 )
 
 3>> 
