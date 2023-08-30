@@ -1,0 +1,12 @@
+.weather-container
+{
+    display: flex;
+    justify-content: center;
+}
+
+.weather
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
