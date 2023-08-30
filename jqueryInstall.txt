@@ -1,0 +1,13 @@
+S’il est déjà présent et donc installé, parfait.
+
+S’il n’est pas installé, vous pouvez le faire très simplement en ajoutant cette ligne de code dans le head de votre site (source) :
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+Si non bis (deuxième méthode d’installation mais moins optimisée pour votre temps de chargement et donc moins recommandée) :
+
+    1- Téléchargez jQuery sur le site officiel
+    2- Dé-zippez le paquet et en l’ajoutant dans un répertoire de votre choix sur votre site via FTP / SSH
+    3- Ajoutez cette ligne de code (en modifiant le chemin) à toutes les pages de votre site web :
+
+<script src="chemin/vers/jquery.js"></script>
