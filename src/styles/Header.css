@@ -1,6 +1,7 @@
 header
 {
-    background-color: blueviolet;
+    background: rgb(121,9,118);
+    background: linear-gradient(90deg, rgba(121,9,118,1) 25%, rgba(0,212,255,1) 75%);
 }
 
 .user-icon
