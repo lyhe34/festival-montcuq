@@ -1,10 +1,13 @@
 import { useContext } from "react";
 import { UserContext } from "./UserContext";
 import '../styles/userForm.css';
+import { useNavigate } from "react-router";
 
 export default function Login()
 {
     const userContext = useContext(UserContext);
+
+    const navigate = useNavigate();
 
     const login = (e) =>
     {
@@ -18,6 +21,8 @@ export default function Login()
         if(user.password === password)
         {
             userContext.setUser(user);
+
+            navigate("/");
         }
     }
 

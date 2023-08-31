@@ -2,6 +2,7 @@
 {
     display: flex;
     justify-content: space-around;
+    margin: 50px;
 }
 
 .form
@@ -9,4 +10,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.form h2
+{
+    margin-bottom: 30px;
 }

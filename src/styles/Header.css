@@ -3,6 +3,11 @@ header
     background-color: blueviolet;
 }
 
+.navbar-brand
+{
+    margin: 0;
+}
+
 .user-icon
 {
     color: white;

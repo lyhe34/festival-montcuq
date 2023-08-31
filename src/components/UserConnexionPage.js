@@ -1,10 +1,13 @@
 import Login from "./Login";
 import Sign from "./Sign";
 import '../styles/UserConnexionPage.css'
+import Header from "./Header";
 
 export default function UserConnexionPage()
 {
     return (
+        <>
+        <Header/>
         <div className="forms">
             <div className="form">
                 <h2>Login</h2>
@@ -15,5 +18,6 @@ export default function UserConnexionPage()
                 <Sign/>
             </div>
         </div>
+        </>
     )
 }

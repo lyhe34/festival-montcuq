@@ -1,10 +1,13 @@
 import { useContext } from "react"
 import { UserContext } from "./UserContext"
 import '../styles/userForm.css';
+import { useNavigate } from "react-router";
 
 export default function Sign()
 {
     const userContext = useContext(UserContext);
+
+    const navigate = useNavigate();
 
     const sign = (e) =>
     {
@@ -24,6 +27,8 @@ export default function Sign()
             localStorage.setItem(name, JSON.stringify(user));
 
             userContext.setUser(user);
+
+            navigate("/");
         }
     }
 
