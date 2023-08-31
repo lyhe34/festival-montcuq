@@ -3,6 +3,7 @@ import UserContextProvider from "./components/User/UserContext";
 import { Routes, Route } from "react-router";
 import HomePage from "./components/HomePage";
 import MapPage from "./components/Map/MapPage";
+import UserPage from "./components/User/UserPage";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
           <Route path="/reservation"></Route>
           <Route path="/map" element={<MapPage/>}></Route>
           <Route path="/user-connexion" element={<UserConnexionPage/>}></Route>
-          <Route path="/user-connexion/:id"></Route>
+          <Route path="/user" element={<UserPage/>}></Route>
         </Routes>
       </UserContextProvider>
     </div>

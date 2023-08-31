@@ -25,7 +25,7 @@ export default function UserButton()
                     <FontAwesomeIcon icon={faUser} className='user-icon'/>
                 </div>
                 <ul class="dropdown-menu">
-                    <li><Link class="dropdown-item">Compte</Link></li>
+                    <li><Link to="/user" class="dropdown-item">Compte</Link></li>
                     <li><div type="button" class="dropdown-item" onClick={logout}>Déconnexion</div></li>
                 </ul>
               </div>  
