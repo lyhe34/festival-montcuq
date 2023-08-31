@@ -8,8 +8,18 @@ export default function UserContextProvider({children})
 
     useEffect(() =>
     {
-        setUser(localStorage.getItem("loggedUser"));
+        const u = localStorage.getItem("loggedUser");
+        
+        if(u !== "undefined")
+        {
+            setUser(JSON.parse(u))
+        }
     }, [])
+
+    useEffect(() =>
+    {
+        localStorage.setItem("loggedUser", JSON.stringify(user));
+    }, [user])
 
     return (
         <UserContext.Provider value={{user, setUser}}>

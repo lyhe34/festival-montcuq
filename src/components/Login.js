@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { UserContext } from "./UserContext";
+import '../styles/userForm.css';
 
 export default function Login()
 {
@@ -9,23 +10,26 @@ export default function Login()
     {
         e.preventDefault();
         
-        let user = e.target.user.value;
+        let name = e.target.name.value;
         let password = e.target.password.value;
 
-        if(localStorage?.getItem(user) === password)
+        const user = JSON.parse(localStorage.getItem(name));
+
+        if(user.password === password)
         {
             userContext.setUser(user);
-            console.log(useContext.user);
         }
     }
 
     return (
-        <form>
-            <label onSubmit={(e) => login(e)}>Nom</label>
-            <input type="text"></input>
+        <div className="form-container">
+            <form onSubmit={(e) => login(e)}>
+            <label>Nom</label>
+            <input type="text" name="name"></input>
             <label>Mot de passe</label>
-            <input type="password"></input>
+            <input type="password" name="password"></input>
             <button type="submit">Se connecter</button>
-        </form>
+            </form>
+        </div>
     )
 }
