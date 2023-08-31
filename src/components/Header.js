@@ -1,20 +1,24 @@
+import { Link } from 'react-router-dom';
 import '../styles/Header.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser } from '@fortawesome/free-regular-svg-icons';
+import UserButton from './User/UserButton';
 
 export default function Header()
 {
     return (
         <header>
             <nav className="navbar">
-                <div className="container-fluid justify-content-around">
-                    <a className="navbar-brand text-white" href="#">Festival</a>
-                    <ul className="navbar-nav d-flex flex-row">
-                        <li className="nav-item text-white">Accueil</li>
-                        <li className="nav-item text-white">Programme</li>
-                        <li className="nav-item text-white"></li>
+                <div className="container-fluid justify-content-center">
+                    <div className='navbar-brand-container d-flex justify-content-center'>
+                        <Link to="/" className="navbar-brand text-white">Festival</Link>
+                    </div>
+                    <ul className="navbar-nav d-flex flex-row justify-content-center">
+                        <Link className="nav-item text-white">Programme</Link>
+                        <Link className="nav-item text-white">Réserver</Link>
+                        <Link to="/map" className="nav-item text-white">Plan</Link>
                     </ul>
-                    <a href='#'><FontAwesomeIcon icon={faUser} className='user-icon'/></a>
+                    <div className='user-button-container d-flex justify-content-center'>
+                        <UserButton/>
+                    </div>
                 </div>
             </nav>
         </header>
