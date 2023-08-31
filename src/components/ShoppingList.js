@@ -36,14 +36,14 @@ function ShoppingList({ cart, updateCart }) {
 			/>
 
 			<ul className='montcuq-pass-list'>
-				{passesList.map(({ id, cover, name, light, water,  price, category }) =>
+				{passesList.map(({ id, cover, name, light, moon,  price, category }) =>
 					!activeCategory || activeCategory === category ? (
 						<div key={id}>
 							<Passes
 								cover={cover}
 								name={name}
 								light={light}
-								water={water}
+								moon={moon}
 								price={price}
 							/>
 							<button className = 'montcuq-button-add' onClick={() => addToCart(name, price)}>+</button>

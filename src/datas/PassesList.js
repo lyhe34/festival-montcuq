@@ -12,7 +12,7 @@ export const passesList = [
 		id: '1ed',
 		bestSale: true,
 		light: 1,
-		water: 0,
+		moon: 0,
 		cover: pass_un_j,
 		price: 35
 	},
@@ -21,7 +21,7 @@ export const passesList = [
 		category: 'Scène',
 		id: '2ab',
 		light: 2,
-		water: 0,
+		moon: 0,
 		cover: pass_deux_j,
 		price: 55
 	},
@@ -31,7 +31,7 @@ export const passesList = [
 		category: 'Scène',
 		id: '3sd',
 		light: 1,
-		water: 0,
+		moon: 0,
 		cover: pass_trois_j,
 
 		price: 75
@@ -44,7 +44,7 @@ export const passesList = [
 		category: 'Scène + Bivouac',
 		id: '4kk',
 		light: 2,
-		water: 1,
+		moon: 1,
 		cover: pass_deux_jours_bivouac,
 
 		price: 75
@@ -54,7 +54,7 @@ export const passesList = [
 		category: 'Scène + Bivouac',
 		id: '5pl',
 		light: 3,
-		water: 2,
+		moon: 2,
 		cover: pass_trois_jours_bivouac,
 		price: 95
 	},
@@ -66,7 +66,7 @@ export const passesList = [
 		id: '7ie',
 		bestSale: true,
 		light: 2,
-		water: 3,
+		moon: 3,
 		cover: pass_quatre_jours_bivouac,
 		price: 125
 	},
@@ -78,7 +78,7 @@ export const passesList = [
 	// 	category: 'plante grasse',
 	// 	id: '9vn',
 	// 	light: 2,
-	// 	water: 1,
+	// 	moon: 1,
 	// 	cover: succulent,
 	// 	price: 8
 	// },
@@ -88,7 +88,7 @@ export const passesList = [
 	// 	category: 'extérieur',
 	// 	id: '6uo',
 	// 	light: 2,
-	// 	water: 2,
+	// 	moon: 2,
 	// 	cover: mint,
 	// 	price: 4
 	// }
