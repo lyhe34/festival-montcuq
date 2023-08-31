@@ -1,27 +1,19 @@
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.min.js'
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
 import { BrowserRouter } from 'react-router-dom';
-import { ContexteProvider } from './components/Contexte';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
 
   <React.StrictMode>
-
-    <ContexteProvider>
-
-      <BrowserRouter>
-
-        <App />
-
-      </BrowserRouter>
-
-    </ContexteProvider>
-    
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
