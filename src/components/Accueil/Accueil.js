@@ -1,14 +1,19 @@
 import React from 'react'
 
-import DataTime_ContexteTest from '../Weather-DataTime/DataTime_ContexteTest'
+import Hero from '../Banner/Hero'
+import UserButton from '../User/UserButton'
+
+// Import test
+// import Map from '../A trier/Map'
+
 
 export default function Accueil() {
 
   return (
     <>
-    <div>Accueil</div>
-    {/* <Navbar/> */}
-    {/* <DataTime_ContexteTest/> */}
+   <UserButton/>
+    <Hero/>
+    {/* <Map/> */} {/** --> Voir avec Luc car intégration impossible */}
 
     </>
 

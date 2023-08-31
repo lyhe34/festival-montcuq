@@ -1,0 +1,23 @@
+.form-container
+{
+    display: flex;
+    justify-content: center;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input
+{
+    margin: 10px 0;
+}
+
+form button
+{
+    margin: 10px 0;
+    height: 40px;
+}

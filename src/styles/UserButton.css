@@ -1,0 +1,31 @@
+.user-button-container
+{
+    display: flex;
+    align-items: center;
+}
+
+.user-button-container p
+{
+    color: white;
+    margin: 0 10px;
+}
+
+.user-button-dropdown
+{
+    cursor: pointer;
+}
+
+.user-button-dropdown::after
+{
+    color: white;
+}
+
+.user-button-dropdown > *
+{
+    margin: 0 3px;
+}
+
+.user-icon-dropdown
+{
+    color: white;
+}
