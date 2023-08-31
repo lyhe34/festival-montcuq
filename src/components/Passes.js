@@ -11,7 +11,7 @@ function Passes({ cover, name, moon, light, price }) {
 			<span className='montcuq-item-price'>{price}€</span>
 			<img className='montcuq-item-cover' src={cover} alt={`${name} cover`} />
 			{name}
-			<span>
+			<span className='care-scales'>
 				<CareScale careType='light' scaleValue={light} />
 				<CareScale careType='moon' scaleValue={moon} />
 			</span>

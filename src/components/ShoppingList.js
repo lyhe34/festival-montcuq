@@ -38,7 +38,7 @@ function ShoppingList({ cart, updateCart }) {
 			<ul className='montcuq-pass-list'>
 				{passesList.map(({ id, cover, name, light, moon,  price, category }) =>
 					!activeCategory || activeCategory === category ? (
-						<div key={id}>
+						<div key={id} className='montcuq-pass-list-item'>
 							<Passes
 								cover={cover}
 								name={name}

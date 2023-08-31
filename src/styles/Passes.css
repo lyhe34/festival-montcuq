@@ -25,3 +25,10 @@
 	top: 0;
 	font-weight: 500;
 }
+
+.care-scales {
+	display: flex;
+	/* Use Flexbox */
+	gap: 8px;
+	/* Adjust the gap between the items */
+}
