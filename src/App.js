@@ -1,11 +1,16 @@
-import Map from "./components/Map";
-import Weather from "./components/Weather";
+import Login from "./components/Login";
+//import Map from "./components/Map";
+import Sign from "./components/Sign";
+import UserContextProvider from "./components/UserContext";
+//import Weather from "./components/Weather";
 
 function App() {
   return (
     <div className="App">
-      <Map/>
-      <Weather/>
+      <UserContextProvider>
+        <Login/>
+        <Sign/>
+      </UserContextProvider>
     </div>
   );
 }
