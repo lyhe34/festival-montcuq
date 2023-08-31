@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import '../styles/Wiki.css';
 
 export default function Wiki()
 {
@@ -24,7 +25,10 @@ export default function Wiki()
     return (
         <>
         { parsedWiki && 
-            <div dangerouslySetInnerHTML={{__html: parsedWiki.body.innerHTML}}>
+            <div className="wiki-container">
+                <div className="wiki" dangerouslySetInnerHTML={{__html: parsedWiki.body.innerHTML}}>
+                    
+                </div>
             </div> 
         }
         </>
