@@ -18,11 +18,15 @@ export default function Login()
 
         const user = JSON.parse(localStorage.getItem(name));
 
-        if(user.password === password)
+        if(user && user.password === password)
         {
             userContext.setUser(user);
 
             navigate("/");
+        }
+        else
+        {
+            alert("wrong name or password");
         }
     }
 

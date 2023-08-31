@@ -30,6 +30,10 @@ export default function Sign()
 
             navigate("/");
         }
+        else
+        {
+            alert("user already exist");
+        }
     }
 
     return (

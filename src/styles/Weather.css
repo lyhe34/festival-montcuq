@@ -2,12 +2,21 @@
 {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 50px;
 }
 
 .weather
 {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    background-color: lightblue;
+    border-radius: 50px;
+    padding: 0 50px;
+}
+
+.weather img
+{
+    width: 200px;
 }

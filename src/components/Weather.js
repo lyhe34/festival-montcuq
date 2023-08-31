@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import '../styles/Weather.css';
-import { translate } from "../scripts/translation";
 import { degreeConversion } from "../scripts/degreeConversion";
+import { faTemperatureHalf } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Weather()
 {
@@ -14,18 +15,15 @@ export default function Weather()
         .then(data => setWeather(data));
     }, [])
 
-    useEffect(() =>
-    {
-        console.log(weather);
-    }, [weather])
-
     return (
         <div className="weather-container">
             {weather && 
                 <div className="weather">
-                    <h2>Météo</h2>
-                    <p>{translate(weather.weather[0].main)}</p>
-                    <p>{degreeConversion(weather.main.temp, 'kelvin', 'celsius')} °C</p>
+                    <img className="pe-5" src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt=""/>
+                    <div className="d-flex align-items-center pe-3">
+                        <FontAwesomeIcon icon={faTemperatureHalf} size="4x" color="red"/>
+                        <p className="m-0 ps-3 fs-3 text-white">{degreeConversion(weather.main.temp, 'kelvin', 'celsius')} °C</p>
+                    </div>
                 </div>
             }
         </div>
