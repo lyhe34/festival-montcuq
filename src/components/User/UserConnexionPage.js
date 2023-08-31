@@ -1,7 +1,7 @@
 import Login from "./Login";
 import Sign from "./Sign";
-import '../styles/UserConnexionPage.css'
-import Header from "./Header";
+import '../../styles/UserConnexionPage.css'
+import Header from "../Header";
 
 export default function UserConnexionPage()
 {

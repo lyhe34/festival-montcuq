@@ -4,6 +4,11 @@ header
     background: linear-gradient(90deg, rgba(121,9,118,1) 25%, rgba(0,212,255,1) 75%);
 }
 
+.navbar-brand-container
+{
+    width: 33%;
+}
+
 .navbar-brand
 {
     margin: 0;
@@ -14,7 +19,28 @@ header
     color: white;
 }
 
+.navbar-nav
+{
+    width: 33%;
+}
+
+.user-button-container
+{
+    width: 33%;
+}
+
 .navbar-nav > *
 {
     margin: 0 10px;
+}
+
+.nav-item
+{
+    text-decoration: none;
+}
+
+.nav-item:hover
+{
+    text-shadow: #FC0 1px 0 10px;
+    transition: 0.2s;
 }
