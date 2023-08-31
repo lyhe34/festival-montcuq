@@ -28,7 +28,6 @@ import TestTexte from './components/Programs/TestTexte';   //  ICI LE COMPOSANT 
 
 export default function App() {
   return (
-<<<<<<< HEAD
     
     // <ContexteProvider>
       <div className="Corpus">
@@ -51,20 +50,6 @@ export default function App() {
 
       </div>
     // </ContexteProvider>
-=======
-    <div className="App">
-      <UserContextProvider>
-        <Routes>
-          <Route path="/" element={<HomePage/>}></Route>
-          <Route path="/program"></Route>
-          <Route path="/reservation"></Route>
-          <Route path="/map" element={<MapPage/>}></Route>
-          <Route path="/user-connexion" element={<UserConnexionPage/>}></Route>
-          <Route path="/user" element={<UserPage/>}></Route>
-        </Routes>
-      </UserContextProvider>
-    </div>
->>>>>>> main
   );
 }
 
