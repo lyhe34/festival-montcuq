@@ -1,0 +1,104 @@
+function Hello(){
+    return <h1>Salut tout le monde</h1>
+}
+export default Hello;
+
+function Hello(){
+    return <h1> Salut tout le monde </h1>
+}
+export defult Hello
+
+
+import logo from '../assets/logo.svg';
+
+function Img (){
+    return  <img src={logo} className="App-logo" alt="logo" />
+
+}
+
+export default Img; 
+
+
+import React from 'react';
+
+export default function Bye () {
+    return (
+        <h1> Au revoir</h1>
+    )
+}
+
+
+import React, { Component } from 'react';
+
+class Counter extends Component {
+
+    constructor() {
+        super();
+        this.state = {
+            count: 0
+        }
+    }
+
+increment = () => {
+    this.setState({count : this.state.count+1})
+    // On utilise la méthode setState et on lui dit qu'il va prendre 
+    // dans l'objet count la valeur actuelle et l'ajouter
+}
+
+decrement = () => {
+    this.setState({count : this.state.count-1})
+}
+
+    render() {
+        return (
+            // <div> Counter </div>
+            <>
+            <div> {this.state.count} </div>
+            <button onClick={this.increment}>Incrémenter</button>
+            <button onClick={this.decrement}>Décrémenter</button>    
+            {/* //→ Sur React, on ne peut pas ?  */}
+            {/* // Il faut tout englober dans des balises vides parce que les balises sont au même niveau  */}
+            {/* // = react fragment */}
+            </>
+        )
+    }
+}
+
+
+export default Counter; 
+
+
+
+
+
+
+JSX représente des objets
+
+Babel compile JSX vers des appels à React.createElement().
+
+Ces deux exemples sont identiques :
+
+const element = (
+  <h1 className="greeting">
+    Bonjour, monde !
+  </h1>
+);
+
+const element = React.createElement(
+  'h1',
+  {className: 'greeting'},
+  'Bonjour, monde !'
+);
+
+React.createElement() effectue quelques vérifications pour vous aider à écrire un code sans bug, mais pour l’essentiel il crée un objet qui ressemble à ceci :
+
+// Remarque : cette structure est simplifiée
+const element = {
+  type: 'h1',
+  props: {
+    className: 'greeting',
+    children: 'Bonjour, monde !'
+  }
+};
+
+Ces objets sont appelés des « éléments React ». Vous pouvez les considérer comme des descriptions de ce que vous voulez voir sur l’écran. React lit ces objets et les utilise pour construire le DOM et le tenir à jour.

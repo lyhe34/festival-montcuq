@@ -1,0 +1,12 @@
+.montcuq-categories {
+	text-align: center;
+	padding-top: 30px;
+}
+
+.montcuq-categories-select {
+	margin-right: 15px;
+}
+
+.montcuq-button-reinit {
+	cursor: pointer; 
+}

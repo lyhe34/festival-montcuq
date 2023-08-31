@@ -1,0 +1,173 @@
+230822
+
+>Es7+React Snippets > type rfc = gives you the basic assets you need to begin a project
+
+
+J1>>
+
+node -v 
+npm -v
+$ npx create-react-app mon_first_projet
+$   npm start
+
+
+
+public = va être vu par tous les utilisateurs
+
+package.json = toutes les dépendances y sont stockées
+
+1>>
+Conseil : créer in src un dossier component et mettre les composants dedans.
+Conseil : créer in src un dossier styles et mettre les css dedans.
+
+!! when ../, ne pas mettre par exemple ../src/etc.; on est déjà dans src.
+ 
+
+ !! ES7++ = snippets
+
+2>>
+créer un composantt hello et un composant bye.
+les soumettre à un booléen. 
+ > app.js 
+
+
+3>> exo/ <img> en faire un composant 
+
+!!! les noms de composants c'est avec une maj petite pute. 
+
+
+4>> 
+props = propriété ; on peut faire passer des propriétés à un composant. 
+
+
+
+5>> créer composant counter
+
+6>> Créer un chrono avec les state
+NB utiliser setInterval avec les intervales de temps. 
+Un bouton démarrer
+Pause 
+Reset
+
+setState
+setInterval
+useEffect
+
+
+
+7
+8
+
+9>> Créer un panier de fruits. 
+On veut que ce composant affiche la liste des fruits préz dans le tableau
+et un champ pour ajouter les éléments dans le panier
+
+
+230822
+
+J2>>
+ 1>>
+  // Objectif : 
+
+    // Mettre en place un composant NavBar qui va regrouper 
+    // l'ensembler des composants déjà faits sous forme de liens,
+    // pas besoin de garder les liens, nous le ferons plus tard.
+
+    // Créer le composant 'Shop' qui stockera l'objet 'produits' et qui sera parent du composant 
+    // 'Card' qui, lui, afficher sous forme de carte chaque produit.Créer
+
+    // Utilisation ds props et des hooks. 
+
+
+2>>
+CREER>>
+Un hook personnalisé. 
+Local storage se charge du processus d'enregistrement ; on va lui envoyer des données,
+et il va se charger 
+un hook va enregistrer dans le localStorage > va attendre des paramètres. 
+
+cf>>
+https://www.freecodecamp.org/french/news/comment-utiliser-le-localstorage-avec-les-hooks-de-react-pour-enregister-et-afficher-des-elements/
+
+(
+  Autrement dit, le localStorage permet aux développeurs de stocker et de récupérer des données dans le navigateur.
+
+Il est essentiel de comprendre, cependant, que l'utilisation du localStorage comme base de données pour votre projet n'est pas une bonne pratique, car les données seront perdues lorsque l'utilisateur videra le cache, entre autres choses.
+
+Les développeurs utilisent fréquemment le localStorage pour ajouter une fonctionnalité en mode sombre à une application, enregistrer un élément de tâche ou conserver des valeurs d'entrée de formulaire d'un utilisateur, et cela parmi de nombreux autres scénarios.
+)
+
+3>> 
+Créer un fichier login 
+
+
+A Suivre >>
+Puis ajouter des Liens
+Un login 
+
+
+J3>> 
+230823
+1>> 
+Ajouter une fonction login 
+
+2>> 
+Exo Calcule besoin calorique :
+Créer une application permettant de calculer les besoins calorique d’un individu en fonction de son genre, son poids, sa taille, son âge et son activité physique. Il faut créer pour ça un formulaire pour saisir toutes les données et les stocker dans un hook d'état. 
+Ci-après la liste des activités avec les coef et les deux calcules pour les femmes et les hommes
+Liste des activités :
+•    Journée passée au repos allongé, coef 1
+•    Travail sédentaire assis, pas de sport, coef 1.2
+•    Travail sédentaire avec 30 min de marche, coef 1.4
+•    Travail sédentaire et 1h de sport, coef 1.6
+•    Travail sédentaire et 1h30 à 2h de sport, coef 1.7
+•    Travail physique avec beaucoup de déplacement et 1h30 de sport, coef 1.9
+•    Travail physique et 3h à 4h de sport, coef 2
+Calcul : 
+•    Homme: (66.5+(13.75Poids)+(5Taille)-(6.77Age)) coef
+•    Femme: (655.1 + (9.56Poids)+(1.85Taille)-(4.67Age)) coef
+
+
+
+3>> 
+Exercice Liste de Tâche: 
+Créer une liste de tâches qui devra avoir comme fonctionnalité d'ajouter, de supprimer et de modifier. 
+Utilisez les props pour faire passer des fonctions entre les composants et les states pour gérer votre tableau de tâche.
+
+
+4>> 
+
+TP Galerie d'image: 
+
+Créez un tableau d'objets, chaque objet représentant une image avec des propriétés comme l'URL de     l'image, le titre et la description.
+
+Créez un composant Gallery qui affiche les images sous forme de vignettes dans une grid.
+
+Utilisez la méthode fetch pour faire appel à une API d'image. Exemple: Pexels.com (attention connexion requise) ou autre si vous trouvez.
+
+Lorsque l'utilisateur clique sur une vignette, affichez l'image en grand dans une fenêtre modale.
+
+Créez un composant Modal pour afficher l'image en grand avec son titre et sa description. Ajouter un bouton Fermer.
+
+Vous pouvez ajouter en plus du CSS pour rendre le tout plus attrayant.
+
+PS: 
+Utilisation du fetch
+
+fetch("URL_API")
+.then(response => response.json())
+.then(data => console.log(data))
+Nicolas — Aujourd’hui à 16:42
+fetch(URL, {
+          headers: {
+            Authorization: API_KEY,
+          },
+        })
+        .then(response => response.json())
+        .then(data => {
+          console.log(data);;
+        })
+        .catch(error => {
+          console.error('Une erreur est survenue :', error);
+        });
+https://api.pexels.com/v1/curated?per_page=10
