@@ -9,9 +9,9 @@ export default function Header()
                 <div className="container-fluid justify-content-around">
                     <p className="navbar-brand text-white">Festival</p>
                     <ul className="navbar-nav d-flex flex-row">
-                        <li className="nav-item text-white">1</li>
-                        <li className="nav-item text-white">2</li>
-                        <li className="nav-item text-white">3</li>
+                        <li className="nav-item text-white">Accueil</li>
+                        <li className="nav-item text-white">Programme</li>
+                        <li className="nav-item text-white"></li>
                     </ul>
                     <UserButton/>
                 </div>
