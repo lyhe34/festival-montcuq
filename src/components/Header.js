@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import '../styles/Header.css';
 import UserButton from './User/UserButton';
 import Logo_1 from '../assets/Logo_1.png'
+import CartButton from './CartButton';
 
 export default function Header()
 {
@@ -19,6 +20,7 @@ export default function Header()
                     </ul>
                     <div className='user-button-container d-flex justify-content-center'>
                         <UserButton/>
+                        <CartButton/>
                     </div>
                 </div>
             </nav>

@@ -22,7 +22,7 @@ export default function UserButton()
             { userContext?.user === undefined ? (
                 <Link to="/user-connexion"><FontAwesomeIcon icon={faUser} className='user-icon' /></Link>  
             ) : (
-            <div className='user-button-container dropdown'>
+            <div className='dropdown d-flex'>
                 <p>{userContext.user.name}</p>
                 <div className='user-button-dropdown dropdown-toggle' type="button" data-bs-toggle="dropdown" >
                     <FontAwesomeIcon icon={faUser} className='user-icon' />

@@ -18,7 +18,8 @@ export default function Sign() {
         const user =
         {
             name: name,
-            password: password
+            password: password,
+            cart: []
         }
 
         if (!localStorage.getItem(name)) {

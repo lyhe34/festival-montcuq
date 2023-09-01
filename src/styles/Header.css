@@ -19,6 +19,12 @@ header
     color: white;
 }
 
+#cart-icon
+{
+    margin: 10px;
+    cursor: pointer;
+}
+
 .navbar-nav
 {
     width: 33%;
