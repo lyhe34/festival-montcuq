@@ -1,18 +1,21 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 import { Contexte } from '../Contexte';
 // import useLocalStorage from './useLocalStorage'
 import '../../styles/UserButton.css';
 
-export default function UserButton() {
-    const userContext = useContext(Contexte);
+export default function UserButton()
+{
+    const userContext = useContext(UserContext);
 
-    // const [loggedUser, setLoggedUser] = useLocalStorage()
+    const navigate = useNavigate();
 
-    const logout = () => {
-        userContext.setUserContext(undefined)
+    const logout = () =>
+    {
+        userContext.setUser(undefined);
+        navigate("/");
     }
 
     return (
