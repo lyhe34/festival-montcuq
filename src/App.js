@@ -9,15 +9,15 @@ import './styles/Calendar.css'; // Import css Calendrier
 import './styles/DatePicker.css'; // Import css choix date
 
 import './styles/Hero.css'; // Import css HeroBanner
-import './styles/UserButton.css';// Import css Connexion
-import './styles/UserConnexionPage.css' // Import css page de connexion
-import './styles/userForm.css'; // Import css formulaire sign & login
+import './styles/userCss/UserButton.css';// Import css Connexion
+import './styles/userCss/UserConnexionPage.css' // Import css page de connexion
+import './styles/userCss/userForm.css'; // Import css formulaire sign & login
 
 
-// import { ContexteProvider } from "./Component/Contexte";  // Import contexte --> Déclaré dans index
 
-// Import route
-import { Route, Routes } from 'react-router-dom';
+import { ContexteProvider } from './components/Contexte';// Import contexte --> Déclaré dans App 
+
+import { Route, Routes } from 'react-router-dom'; // Import route
 
 
 // Composants
@@ -28,6 +28,16 @@ import Map from './components/ComeOn/Map';  // Composant map
 import Calendar from './components/Programs/Calendar';  // Composant Calendrier
 
 import UserConnexionPage from './components/User/UserConnexionPage'; // Composant page de connexion
+
+
+
+// Import shop
+// import ShoppingList from '../src/components/Shopping/ShoppingList'; 
+import Cart from '../src/components/Panier/Cart.js';
+
+
+// IMPORT TEST SHOP
+import ShoppingList2 from './components/Shopping/ShoppingList_ReworkContexte';
 
 
 // import TestTexte from './components/Programs/TestTexte';   //  ICI LE COMPOSANT sers juste a voir les modife de pages
@@ -41,7 +51,7 @@ import UserConnexionPage from './components/User/UserConnexionPage'; // Composan
 export default function App() {
   return (
     
-    // <ContexteProvider>
+    <ContexteProvider>
       <div className="Corpus">
         <header>
           <Navbar/>
@@ -53,6 +63,12 @@ export default function App() {
           <Route path='/meteo' element={<Meteo/>}/>
           <Route path='/map' element={<Map/>} />
           <Route path='/programs/calendar' element={<Calendar/>}/>
+          {/* <Route path='/billeterie' element={<ShoppingList/>}/> */}
+
+          <Route path='/billeterie' element={<ShoppingList2/>}/>
+
+
+          <Route path='/billeterie/panier' element={<Cart/>}/>
 
           <Route path='/user-connexion' element={<UserConnexionPage/>}/>
 
@@ -63,7 +79,7 @@ export default function App() {
         </Routes>
 
       </div>
-    // </ContexteProvider>
+     </ContexteProvider>
   );
 }
 

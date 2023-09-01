@@ -1,9 +1,11 @@
-import Sun from '../assets/sun.svg'
-import moon from '../assets/moon.svg'
+import Sun from '../../assets/ShoppingAssets/sun.svg'
+import moon from '../../assets/ShoppingAssets/moon.svg'
 
 // Ici, il s'agit d'une manière de faire.
 //Vous auriez aussi pu utiliser une fonction qui retourne l'élément souhaité, ou bien faire directement des conditions
 
+
+// function qui affiche des icone celon le nb de jour / nuit pris
 
 function CareScale({ scaleValue, careType }) {
 	const range = [1, 2, 3]

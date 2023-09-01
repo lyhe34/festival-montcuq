@@ -11,7 +11,7 @@ export default function Accueil() {
 
   return (
     <>
-   <UserButton/>
+   {/* <UserButton/> */}
     <Hero/>
     {/* <Map/> */} {/** --> Voir avec Luc car intégration impossible */}
 

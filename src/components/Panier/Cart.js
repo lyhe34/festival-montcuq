@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
-import '../styles/Cart.css'
+// import '../styles/Cart.css'
+import '../../styles/ShoppingCss/Cart.css'
+import '../../assets/ShoppingAssets/icon-trolley-cart-add.png'
 
 function Cart({ cart, updateCart }) {
 	const [isOpen, setIsOpen] = useState(true)
@@ -40,9 +42,9 @@ function Cart({ cart, updateCart }) {
 			<div className='montcuq-cart-closed'>
 			<button
 					className='montcuq-cart-toggle-button'
-				onClick={() => setIsOpen(true)}
+				// onClick={() => setIsOpen(true)}
 			>
-					<img src={require('../assets/icon-trolley-cart-add.png').default} alt='' /> Votre panier
+					<img src='../assets/icon-trolley-cart-add.png' alt='' /> Votre panier
 				</button>
 				
 		</div>

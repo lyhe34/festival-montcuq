@@ -24,7 +24,7 @@ export default function Navbar() {
                         <li className='nav-item'><Link to="/"><div  className='nav-link'>Accueil</div></Link></li>
                         <li className='nav-item'><Link to="/programs/calendar"><div>Programme</div></Link></li>
                         
-                        <li className='nav-item'><div>Billetterie</div></li>
+                        <li className='nav-item'><Link to="/billeterie"><div>Billetterie</div></Link></li> 
                         <li className='nav-item'><div>Guest</div></li>
                         <li className='nav-item'><div>Réservation</div></li>
                         <li className='nav-item'><Link to="/map"><div>Comment venir ?</div></Link></li> 

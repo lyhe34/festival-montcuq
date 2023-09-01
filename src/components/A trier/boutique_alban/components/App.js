@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import Banner from './Banner'
 import Cart from './Cart'
-import Footer from './Footer'
+import Footer from '../../../Footer/Footer'
 import ShoppingList from './ShoppingList'
 import '../styles/Layout.css'
 

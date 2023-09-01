@@ -1,10 +1,13 @@
 import { useState } from 'react'
-import { passesList } from '../datas/PassesList'
-import Passes from './Passes'
-import Categories from './Categories'
-import '../styles/ShoppingList.css'
+import { passesList } from './PassesList'
+// import Passes from './Passes'
+import Categories from '../Categories'
+// import '../styles/ShoppingList.css'
 
 function ShoppingList({ cart, updateCart }) {
+
+	console.log(cart)
+	
 	const [activeCategory, setActiveCategory] = useState('')
 	const categories = passesList.reduce(
 		(acc, elem) =>
