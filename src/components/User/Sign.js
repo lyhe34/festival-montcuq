@@ -1,11 +1,9 @@
 import { useContext } from "react"
-// import { UserContext } from "../Recup(not_use)/UserContext"
-import { Contexte } from "../Contexte";
-// import '../../styles/userForm.css';
+import { UserContext } from './UserContext';
 import { useNavigate } from "react-router";
 
 export default function Sign() {
-    const userContext = useContext(Contexte);
+    const userContext = useContext(UserContext);
 
     const navigate = useNavigate();
 
@@ -19,13 +17,14 @@ export default function Sign() {
         {
             name: name,
             password: password,
-            cart: []
+            cart: localStorage.getItem("temp-cart") === null ? JSON.parse(localStorage.getItem("temp-cart")) : []
         }
 
-        if (!localStorage.getItem(name)) {
+        if (!localStorage.getItem(name)) 
+        {
             localStorage.setItem(name, JSON.stringify(user));
 
-            userContext.setUserContext(user);
+            userContext.setUser(user);
 
             navigate("/");
         }

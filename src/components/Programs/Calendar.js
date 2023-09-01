@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useState, useContext } from 'react';
 import { Contexte } from '../Contexte';
 import Calendar from 'react-calendar';
 import ReactDatePicker from 'react-datepicker';
@@ -11,12 +11,6 @@ export default function Agenda() {
 
   const [sejourStart, setSejourStart] = useState()
   const [sejourEnd, setSejourEnd] = useState()
-
-  useEffect(() =>
-  {
-    console.log(sejourStart);
-    console.log(sejourEnd);
-  }, [sejourStart, sejourEnd])
 
   return (
     <div>

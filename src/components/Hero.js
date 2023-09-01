@@ -5,8 +5,8 @@ export default function Hero()
     return (
         <div className="hero-image">
             <div className="hero-text">
-                <h1>Festival</h1>
-                <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                <h1></h1>
+                <p></p>
             </div>
         </div>
     )

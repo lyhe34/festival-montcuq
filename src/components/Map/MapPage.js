@@ -3,6 +3,7 @@ import Map from "./Map";
 import Wiki from '../Wiki';
 import Weather from '../Weather';
 import DataTime from '../Weather-DataTime/DataTime';
+import Footer from "../Footer";
 
 export default function MapPage()
 {
@@ -13,6 +14,7 @@ export default function MapPage()
         <Map/>
         <DataTime/>
         <Weather/>
+        <Footer/>
         </>
     )
 }

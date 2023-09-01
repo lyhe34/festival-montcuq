@@ -1,10 +1,14 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import { passesList } from '../datas/PassesList'
 import Passes from './Passes'
 import Categories from './Categories'
 import '../styles/ShoppingList.css'
+import { CartContext } from './CartContext'
 
-function ShoppingList({ cart, updateCart }) {
+function ShoppingList() {
+	
+	const cartContext = useContext(CartContext);
+
 	const [activeCategory, setActiveCategory] = useState('')
 	const categories = passesList.reduce(
 		(acc, elem) =>
@@ -12,18 +16,18 @@ function ShoppingList({ cart, updateCart }) {
 		[]
 	)
 
-	function addToCart(name, price) {
-		const currentPlantAdded = cart.find((plant) => plant.name === name)
+	const addToCart = (name, price) => {
+		const currentPlantAdded = cartContext.cart.find((plant) => plant.name === name)
 		if (currentPlantAdded) {
-			const cartFilteredCurrentPlant = cart.filter(
+			const cartFilteredCurrentPlant = cartContext.cart.filter(
 				(plant) => plant.name !== name
 			)
-			updateCart([
+			cartContext.setCart([
 				...cartFilteredCurrentPlant,
 				{ name, price, amount: currentPlantAdded.amount + 1 }
 			])
 		} else {
-			updateCart([...cart, { name, price, amount: 1 }])
+			cartContext.setCart([...cartContext.cart, { name, price, amount: 1 }])
 		}
 	}
 

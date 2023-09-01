@@ -4,8 +4,6 @@ export const Contexte = createContext()
 
 export const ContexteProvider = ({ children }) => {
 
-
-
   // Weather Context 
   const [weather, setWeather] = useState();
   useEffect(() => {

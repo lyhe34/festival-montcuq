@@ -4,21 +4,26 @@ export const UserContext = createContext();
 
 export default function UserContextProvider({children})
 {
-    const [user, setUser] = useState();
-
-    useEffect(() =>
+    const getLoggedUser = () =>
     {
         const u = localStorage.getItem("loggedUser");
-        
-        if(u !== "undefined")
-        {
-            setUser(JSON.parse(u))
-        }
-    }, [])
+
+        return u ? JSON.parse(u) : null;
+    }
+
+    const [user, setUser] = useState(getLoggedUser);
 
     useEffect(() =>
     {
-        localStorage.setItem("loggedUser", JSON.stringify(user));
+        if(user)
+        {
+            localStorage.setItem(user.name, JSON.stringify(user));
+            localStorage.setItem("loggedUser", JSON.stringify(user));
+        }
+        else
+        {
+            localStorage.setItem("loggedUser", null);
+        }
     }, [user])
 
     return (

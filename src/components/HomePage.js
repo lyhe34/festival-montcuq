@@ -1,5 +1,6 @@
 import Header from "./Header";
 import Hero from './Hero';
+import Footer from './Footer';
 
 export default function HomePage()
 {
@@ -7,6 +8,7 @@ export default function HomePage()
         <>
         <Header/>
         <Hero/>
+        <Footer/>
         </>
     )
 }

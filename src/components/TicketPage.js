@@ -1,6 +1,8 @@
 import Agenda from "./Programs/Calendar";
 import Header from "./Header";
-import ShoppingList from './A trier/boutique_alban/components/ShoppingList';
+import ShoppingList from "./ShoppingList";
+import Cart from './Cart';
+import Footer from "./Footer";
 
 export default function TicketPage()
 {
@@ -8,6 +10,9 @@ export default function TicketPage()
         <>
         <Header/>
         <Agenda/>
+        <ShoppingList/>
+        <Cart/>
+        <Footer/>
         </>
     )
 }
