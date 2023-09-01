@@ -18,8 +18,8 @@ export const ContexteProvider = ({ children }) => {
   // Date + Hour Context 
   const [date, setDate] = useState(new Date())
   useEffect(() => {
-    let interval = setInterval(() => {
-      setDate(new Date())
+      setInterval(() => {
+        setDate(new Date())
     }, 1000);//  console.log(interval)
   })
   
@@ -37,20 +37,6 @@ export const ContexteProvider = ({ children }) => {
   useEffect(() => {
     localStorage.setItem("loggedUser", JSON.stringify(userContext));
   }, [userContext])
-
-
-
-
-
-
-  // Context send
-  const data = {
-    weather,
-    date,
-    userContext,
-    setUserContext,
-  }
-
 
 
   // Renvoie

@@ -13,7 +13,7 @@ export default function Agenda() {
   const [sejourEnd, setSejourEnd] = useState()
 
   return (
-    <div>
+    <div className='d-flex flex-column align-items-center m-5'>
       <div>Calendrier</div>
       <div className=''> {/** changer le positionement ici */}
         <div>

@@ -1,15 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
 import { Link, useNavigate } from 'react-router-dom';
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import { UserContext } from './UserContext';
 import '../../styles/UserButton.css';
-import { CartContext } from '../CartContext';
 
 export default function UserButton()
 {
     const userContext = useContext(UserContext);
-    const cartContext = useContext(CartContext);
 
     const navigate = useNavigate();
 

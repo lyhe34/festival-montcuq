@@ -8,7 +8,7 @@ export default function DataTime() {
   console.log(contexte);
 
   return (
-    <div>
+    <div className="d-flex flex-column align-items-center">
       <div>Nous somme le  {contexte.date.toLocaleDateString()}</div>
       <div >Il est : {contexte.date.toLocaleTimeString()}</div>
     </div>
