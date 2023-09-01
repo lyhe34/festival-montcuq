@@ -14,21 +14,16 @@ import './styles/UserConnexionPage.css' // Import css page de connexion
 import './styles/userForm.css'; // Import css formulaire sign & login
 
 
-// import { ContexteProvider } from "./Component/Contexte";  // Import contexte --> Déclaré dans index
+import { ContexteProvider } from './components/Contexte';  // Import contexte --> Déclaré dans index
 
 // Import route
 import { Route, Routes } from 'react-router-dom';
-
-
 // Composants
 import Navbar from './components/Navbar'; // Ici la nav est présente pour pouvoir être appliquer à toutes les pages
-import Accueil from './components/Accueil/Accueil';  // Composant qui regroupe tous les liens de la navigation
-import Meteo from './components/Weather-DataTime/Meteo';  // Composant Meteo
-import Map from './components/ComeOn/Map';  // Composant map
-import Calendar from './components/Programs/Calendar';  // Composant Calendrier
-
 import UserConnexionPage from './components/User/UserConnexionPage'; // Composant page de connexion
-
+import MapPage from './components/Map/MapPage';
+import UserPage from './components/User/UserPage';
+import HomePage from './components/HomePage';
 
 // import TestTexte from './components/Programs/TestTexte';   //  ICI LE COMPOSANT sers juste a voir les modife de pages
 
@@ -40,14 +35,6 @@ import UserConnexionPage from './components/User/UserConnexionPage'; // Composan
 
 export default function App() {
   return (
-    
-    // <ContexteProvider>
-      <div className="Corpus">
-        <header>
-          <Navbar/>
-        </header>
-
-
         <Routes>
           <Route path="/" element={<HomePage/>}></Route>
           <Route path="/program"></Route>
@@ -56,9 +43,6 @@ export default function App() {
           <Route path="/user-connexion" element={<UserConnexionPage/>}></Route>
           <Route path="/user" element={<UserPage/>}></Route>
         </Routes>
-
-      </div>
-    // </ContexteProvider>
   );
 }
 

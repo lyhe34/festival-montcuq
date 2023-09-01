@@ -17,7 +17,6 @@ export default function UserButton() {
 
     return (
         <>
-
             {userContext.user=== undefined ? (
                 <Link to="/user-connexion"><FontAwesomeIcon icon={faUser} className='user-icon' /></Link>  
             ) : (
