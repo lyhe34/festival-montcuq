@@ -1,14 +1,16 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { Contexte } from "../Contexte";
 
 export default function DataTime() {
 
-  const { date } = useContext(Contexte)
+  const contexte = useContext(Contexte)
+
+  console.log(contexte);
 
   return (
     <div>
-      <div>Nous somme le  {date.toLocaleDateString()}</div>
-      <div >Il est : {date.toLocaleTimeString()}</div>
+      <div>Nous somme le  {contexte.date.toLocaleDateString()}</div>
+      <div >Il est : {contexte.date.toLocaleTimeString()}</div>
     </div>
 
   )

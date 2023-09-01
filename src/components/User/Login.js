@@ -1,35 +1,32 @@
 import { useContext } from "react";
-// import { UserContext } from "../Recup(not_use)/UserContext";
-import { Contexte } from "../Contexte";
-// import '../../styles/userForm.css';
+import { UserContext } from "./UserContext";
+import '../../styles/userForm.css';
 import { useNavigate } from "react-router";
-// import { Alert } from "react-bootstrap";
 
-
-
-export default function Login() {
-    const userContext = useContext(Contexte);
+export default function Login()
+{
+    const userContext = useContext(UserContext);
 
     const navigate = useNavigate();
 
-    const login = (e) => {
+    const login = (e) =>
+    {
         e.preventDefault();
-
+        
         let name = e.target.name.value;
         let password = e.target.password.value;
 
         const user = JSON.parse(localStorage.getItem(name));
 
-        if (user.password === password) {
-            userContext.setUserContext(user);
+        if(user && user.password === password)
+        {
+            userContext.setUser(user);
 
             navigate("/");
-        }else {
-            // return (
-            //    <Alert className="alert">
-            //     <p>Retry</p>
-            //    </Alert>
-            // )
+        }
+        else
+        {
+            alert("wrong name or password");
         }
     }
 

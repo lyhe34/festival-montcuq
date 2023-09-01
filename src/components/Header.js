@@ -14,7 +14,7 @@ export default function Header()
                     </div>
                     <ul className="navbar-nav d-flex flex-row justify-content-center">
                         <Link className="nav-item text-white">Programme</Link>
-                        <Link className="nav-item text-white">Réserver</Link>
+                        <Link to="/ticket" className="nav-item text-white">Billeterie</Link>
                         <Link to="/map" className="nav-item text-white">Plan</Link>
                     </ul>
                     <div className='user-button-container d-flex justify-content-center'>

@@ -58,7 +58,7 @@ export const ContexteProvider = ({ children }) => {
   // Renvoie
   return (
     // <div>Contexte</div>
-    <Contexte.Provider value={data}>
+    <Contexte.Provider value={{weather, date, userContext, setUserContext}}>
       {children}
     </Contexte.Provider>
   )

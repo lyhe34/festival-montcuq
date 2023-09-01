@@ -1,36 +1,22 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { Contexte } from '../Contexte';
 import Calendar from 'react-calendar';
 import ReactDatePicker from 'react-datepicker';
-
-
-// import 'react-calendar/dist/Calendar.css'   //CSS de base 
-
-
+import '../../../node_modules/react-calendar/dist/Calendar.css'
+import '../../styles/DatePicker.css'
 
 export default function Agenda() {
 
   const { date } = useContext(Contexte)
 
-
   const [sejourStart, setSejourStart] = useState()
   const [sejourEnd, setSejourEnd] = useState()
 
-  // const voyage = (() => {{sejourStart}; {sejourEnd}});
-
-// const departure = () => sejourStart.toDateString()
-
-
-
-
-  // const
-  // console.log(date)
-  // console.log(sejour)
-  // console.log(() => sejourStart[1].toDateString())
-  // console.log({sejourStart});
-// console.log(departure)
-
-  
+  useEffect(() =>
+  {
+    console.log(sejourStart);
+    console.log(sejourEnd);
+  }, [sejourStart, sejourEnd])
 
   return (
     <div>
@@ -66,11 +52,8 @@ export default function Agenda() {
 
       <div className='m-5'>
         <Calendar value={date} selectRange={true} />
-        <span> le voyage est du  : </span> 
+        { sejourStart && sejourEnd && <div> le voyage est du  : {sejourStart.toLocaleDateString() + "au " + sejourEnd.toLocaleDateString()}  </div> }
       </div>
-{/*  to {sejourEnd} {sejourStart[1]}*/}
-
-
     </div>
   )
 }
