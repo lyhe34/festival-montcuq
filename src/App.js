@@ -33,11 +33,12 @@ import UserConnexionPage from './components/User/UserConnexionPage'; // Composan
 
 // Import shop
 // import ShoppingList from '../src/components/Shopping/ShoppingList'; 
-import Cart from '../src/components/Panier/Cart.js';
+// import Cart from '../src/components/Panier/Cart.js';
 
 
 // IMPORT TEST SHOP
-import ShoppingList2 from './components/Shopping/ShoppingList_ReworkContexte';
+import ShoppingList from './components/Shopping/ShoppingList_ReworkContexte';
+import CartRework from './components/Shopping/CartRework';
 
 
 // import TestTexte from './components/Programs/TestTexte';   //  ICI LE COMPOSANT sers juste a voir les modife de pages
@@ -65,10 +66,10 @@ export default function App() {
           <Route path='/programs/calendar' element={<Calendar/>}/>
           {/* <Route path='/billeterie' element={<ShoppingList/>}/> */}
 
-          <Route path='/billeterie' element={<ShoppingList2/>}/>
+          <Route path='/billeterie' element={<ShoppingList/>}/>
 
 
-          <Route path='/billeterie/panier' element={<Cart/>}/>
+          <Route path='/billeterie/panier' element={<CartRework/>}/>
 
           <Route path='/user-connexion' element={<UserConnexionPage/>}/>
 
