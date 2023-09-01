@@ -1,0 +1,29 @@
+.montcuq-shopping-list {
+	width: 100%;
+}
+
+.montcuq-pass-list {
+	list-style-type: none;
+	padding: 32px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.montcuq-pass-list-item {
+	width: calc(50% - 16px);
+	/* Adjust as needed based on spacing and number of items per row */
+	margin-bottom: 16px;
+	/* Add space between items */
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	/* Add positioning */
+}
+
+.montcuq-button-add {
+	font-weight: 500;
+	cursor: crosshair;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
