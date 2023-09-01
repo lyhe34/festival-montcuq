@@ -2,8 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
 import { Link, useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
-import { Contexte } from '../Contexte';
-// import useLocalStorage from './useLocalStorage'
+import { UserContext } from '../User/UserContext';
 import '../../styles/UserButton.css';
 
 export default function UserButton()
@@ -20,7 +19,7 @@ export default function UserButton()
 
     return (
         <>
-            {userContext.user=== undefined ? (
+            { userContext?.user === undefined ? (
                 <Link to="/user-connexion"><FontAwesomeIcon icon={faUser} className='user-icon' /></Link>  
             ) : (
             <div className='user-button-container dropdown'>

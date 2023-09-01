@@ -10,7 +10,7 @@ export default function Header()
             <nav className="navbar">
                 <div className="container-fluid justify-content-center">
                     <div className='navbar-brand-container d-flex justify-content-center'>
-                        <Link to="/" className="navbar-brand text-white"><img src={Logo_1} className='Logo' alt='Logo'/></Link>
+                        <Link to="/" className="navbar-brand text-white d-flex justify-content-center align-items-center"><img src={Logo_1} className='Logo' alt='Logo'/></Link>
                     </div>
                     <ul className="navbar-nav d-flex flex-row justify-content-center">
                         <Link className="nav-item text-white">Programme</Link>
